@@ -1,0 +1,10 @@
+<group name="sysmon, atomic_red_team,">
+  <rule id="100050" level="12">
+    <if_group>sysmon_event1</if_group>
+    <match>comsvcs.dll</match>
+    <description>High Severity: LSASS memory dump attempt using comsvcs.dll (T1003.001)</description>
+    <mitre>
+      <id>T1003.001</id>
+    </mitre>
+  </rule>
+</group>
